@@ -10,14 +10,14 @@ import (
 	"os"
 )
 
-var palette = []color.Color{color.White, color.Black}
+var palette = []color.Color{color.Black, color.RGBA{11,233,33,12}}
 
 const (
 	whiteIndex = 0
 	blackIndex = 1
 )
 func main(){
-f, _ := os.Create("lissajous.gif")
+f, _ := os.Create("lissajous2.gif")
 	defer f.Close()
 	lissajous(f)
 }
